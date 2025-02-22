@@ -10,15 +10,6 @@ public class LinearSearch {
         return -1;
     }
 
-    public static int largestInArray(int array[]){
-        int largest = Integer.MIN_VALUE;
-        for(int i=0; i<array.length; i++){
-            if(largest<array[i]){
-                largest = array[i];
-            }
-        }
-        return largest;
-    }
     public static void main(String args[]) {
         String Menu[] = {"Dosa", "Utapa", "Medu wada", "Idli"};
         String key = "Utapa";
@@ -28,8 +19,6 @@ public class LinearSearch {
         } else{
             System.out.println("Key is at index " + index);
         }
-        int ko[] = {};
-        System.out.println(largestInArray(ko));
     }
 }
 
@@ -40,4 +29,6 @@ public class LinearSearch {
  * key = 🍒
  * Array - [🫐,🍊,🍒,🍓]        // linear search algo returns 2
  *           0  1   2  3
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  */
